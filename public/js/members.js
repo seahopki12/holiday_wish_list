@@ -4,4 +4,17 @@ $(document).ready(() => {
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
   });
+
+  const testListItem = {
+    name: "Pony",
+    UserId: 1
+  };
+
+  function submitListItem(item) {
+    $.post("/api/items", item).then(data => {
+      console.log(data);
+    });
+  }
+
+  submitListItem(testListItem);
 });
