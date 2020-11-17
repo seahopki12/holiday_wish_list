@@ -7,6 +7,24 @@ body {
     background-color: lightpink;
 }
 
+.jumbotron {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    padding-top: .0rem;
+    padding-bottom: 0.50rem;
+    background-color: #ff4000;
+}
+
+.navbar {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-bottom: 0.0rem;
+    background-color: #ff4000;
+}
+
 #leftSide {
     background-color: lightgreen;
 }
