@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -19,6 +20,7 @@
             </div>
         </div>
     </nav>
+
     <!-- JUMBOTRON -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -29,19 +31,28 @@
 
     <div class="container">
         <div class="row">
-            <!-- LEFT SIDE / USER LIST -->
-            <div class="col-md-6">
-                <h2>Welcome <span class="member-name"></span></h2>
+            <div class="col-sm-6">
+                <div class="card" id="leftSide">
+                    <div class="card-body">
+                        <h2 class="card-title">Your List</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-            <!-- RIGHT SIDE / FAMILY LIST -->
-            <div class="col-md-6">
-                <h2>Family Member: <span class="member-name"></span></h2>
+            <div class="col-sm-6">
+                <div class="card" id="rightSide">
+                    <div class="card-body">
+                        <h2 class="card-title">Wish-list for: xxxxx</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/members.js"></script>
 
 </body>
 

@@ -6,3 +6,11 @@ form.login {
 body {
     background-color: lightpink;
 }
+
+#leftSide {
+    background-color: lightgreen;
+}
+
+#rightSide {
+    background-color: lightgreen;
+}
