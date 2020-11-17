@@ -1,4 +1,29 @@
 form.signup,
 form.login {
-  margin-top: 50px;
+    margin-top: 50px;
+}
+
+body {
+    background-color: lightpink;
+}
+
+.navbar {
+    padding-top: 0.5rem;
+}
+
+.jumbotron {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    padding-top: .0rem;
+    padding-bottom: 0.50rem;
+    background-color: #ff4000;
+}
+
+#leftSide {
+    background-color: lightgreen;
+}
+
+#rightSide {
+    background-color: lightgreen;
 }
