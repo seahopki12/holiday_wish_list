@@ -16,15 +16,29 @@ form.login {
 }
 
 .wishForms {
-    margin-top: 1.0rem;
+    margin-top: 2.0rem;
     background-color: #ffe6e6;
     opacity: 0.9;
     border: white solid;
     border-radius: 2rem;
 }
 
-body {
-    background-color: lightpink;
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("/public/images/christmas2.png");
+    /* Full height */
+    height: 100%;
+    margin: -3rem;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar {
