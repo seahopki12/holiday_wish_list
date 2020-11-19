@@ -1,5 +1,5 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
@@ -31,6 +31,10 @@ body {
     padding-top: 0.5rem;
 }
 
+.btn {
+    margin-top: 3.0rem;
+}
+
 .jumbotron {
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -49,71 +53,73 @@ body {
     background-color: lightgreen;
 }
 
-.load{
+.load {
     animation: slide 2s;
 }
 
-.slider{
+.slider {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
-    animation: slide 30s infinite;  
+    animation: slide 30s infinite;
 }
 
-@keyframes slide{
-    0%{
+@keyframes slide {
+    0% {
         background-image: url('../images/christmas.jpg');
     }
-    12.5%{ 
+    12.5% {
         background-image: url('../images/christmas.jpg');
     }
-    12.501%{
+    12.501% {
         background-image: url('../images/boxing_day.png');
     }
-    25%{
+    25% {
         background-image: url('../images/boxing_day.png');
     }
-    25.501%{
+    25.501% {
         background-image: url('../images/chanukah.png');
     }
-    37.5%{
+    37.5% {
         background-image: url('../images/chanukah.png');
-    }    
-    37.501%{
+    }
+    37.501% {
         background-image: url('../images/diwali.png');
     }
-    50%{
+    50% {
         background-image: url('../images/diwali.png');
     }
-    50.01%{
+    50.01% {
         background-image: url('../images/kwanzaa.png');
     }
-    62.5%{
+    62.5% {
         background-image: url('../images/kwanzaa.png');
     }
-    62.501%{
+    62.501% {
         background-image: url('../images/st_nicholas.png');
     }
-    75%{
+    75% {
         background-image: url('../images/st_nicholas.png');
     }
-    75.01%{
+    75.01% {
         background-image: url('../images/ethiopia.png');
     }
-    87.5%{
+    87.5% {
         background-image: url('../images/ethiopia.png');
     }
-    87.501%{
+    87.501% {
         background-image: url('../images/christmas2.png');
     }
-    100%{
+    100% {
         background-image: url('../images/christmas2.png');
     }
 }
+
 
 /* Style footer */
+
 footer {
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -124,4 +130,4 @@ footer {
     bottom: 0;
     width: 100%;
     position: fixed;
-    }
+}
