@@ -31,9 +31,11 @@ body {
     padding-top: 0.5rem;
 }
 
-.btn {
+
+/* .btn {
     margin-top: 3.0rem;
-}
+    margin-bottom: 5px;
+} */
 
 .jumbotron {
     font-family: 'Times New Roman', Times, serif;

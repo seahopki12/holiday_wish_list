@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Holiday Wish List</title>public/images/christmas2.png
+    <title>Holiday Wish List</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet for Font Awesome icon -->
@@ -16,7 +16,7 @@
     <!-- JUMBOTRON BANNER  -->
     <div class="text-center titleBanner jumbotron jumbotron-fluid">
         <div class="container">
-            <a class="btn btn-success btn-md" href="public/login.html" role="button" style="float:right;">Logout</a>
+            <a class="btn btn-success btn-md" href="../public/login.html" role="button" style="float:right;">Logout</a>
             <h1 class="display-4">Holiday Wish List</h1>
         </div>
     </div>
@@ -25,12 +25,20 @@
     <div class="container">
         <div class="row">
             <!-- USER SIDE -->
-            <div class="wishForms col-md-5 ">
+            <div class="wishForms col-md-5">
                 <h2 class="bold text-center">Your List</h2>
                 <h3 class="bold text-left">Welcome User xxxx</h3>
+                <form class="form-inline">
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputItem" class="sr-only">Enter Item</label>
+                        <input type="item" class="form-control" id="userWish" placeholder="Enter Item">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Wish!</button>
+                </form>
             </div>
             <!-- FAMILY SIDE -->
-            <div class="wishForms col-md-5 col-md-offset-2 ">
+            <div class="wishForms col-md-5 col-md-offset-1 ">
                 <h2 class="bold text-center">Family List</h2>
             </div>
         </div>
