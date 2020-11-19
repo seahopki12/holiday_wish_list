@@ -1,7 +1,7 @@
 {
-  "name": "1-Passport-Example",
+  "name": "holiday_wish_list",
   "version": "1.0.0",
-  "description": "",
+  "description": "list your gifts and purchase gifts for others",
   "main": "server.js",
   "scripts": {
     "test": "npm run lint",
@@ -30,6 +30,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "flickity": "^2.2.0"
   }
 }
