@@ -1,13 +1,9 @@
-* {
+* { box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
 
-form.signup {
-    margin-top: 1.0rem;
-}
-
-form.login {
+form.signup, form.login {
     margin-top: 1.0rem;
 }
 
@@ -16,7 +12,7 @@ form.login {
 }
 
 .wishForms {
-    margin-top: 2.0rem;
+    /* margin-top: 1.0rem; */
     background-color: #ffe6e6;
     opacity: 0.9;
     border: white solid;
@@ -50,6 +46,22 @@ html {
     margin-bottom: 5px;
 }
 
+.instruction {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    padding-top: 0.1rem;
+}
+
+.formJumbotron {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.50rem;
+    background-color: #ff4000;
+    opacity: 0.8;
+}
+
 .jumbotron {
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -68,73 +80,15 @@ html {
     background-color: lightgreen;
 }
 
-.load {
-    animation: slide 2s;
+body {
+	background-image: url("../images/holidays1.png");
+	background-position: center center;
+ 	background-repeat: no-repeat;	
+	background-attachment: fixed;
+	background-size: cover;
 }
-
-.slider {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    animation: slide 30s infinite;
-}
-
-@keyframes slide {
-    0% {
-        background-image: url('../images/christmas.jpg');
-    }
-    12.5% {
-        background-image: url('../images/christmas.jpg');
-    }
-    12.501% {
-        background-image: url('../images/boxing_day.png');
-    }
-    25% {
-        background-image: url('../images/boxing_day.png');
-    }
-    25.501% {
-        background-image: url('../images/chanukah.png');
-    }
-    37.5% {
-        background-image: url('../images/chanukah.png');
-    }
-    37.501% {
-        background-image: url('../images/diwali.png');
-    }
-    50% {
-        background-image: url('../images/diwali.png');
-    }
-    50.01% {
-        background-image: url('../images/kwanzaa.png');
-    }
-    62.5% {
-        background-image: url('../images/kwanzaa.png');
-    }
-    62.501% {
-        background-image: url('../images/st_nicholas.png');
-    }
-    75% {
-        background-image: url('../images/st_nicholas.png');
-    }
-    75.01% {
-        background-image: url('../images/ethiopia.png');
-    }
-    87.5% {
-        background-image: url('../images/ethiopia.png');
-    }
-    87.501% {
-        background-image: url('../images/christmas2.png');
-    }
-    100% {
-        background-image: url('../images/christmas2.png');
-    }
-}
-
 
 /* Style footer */
-
 footer {
     font-family: 'Times New Roman', Times, serif;
     color: white;
