@@ -5,63 +5,59 @@
   <title>Holiday Wish List Login</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Stylesheet for Font Awesome icon -->
+  <!-- Font Awesome icons Stylesheet -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <!-- CSS Stylesheet -->
   <link href="stylesheets/style.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 
 </head>
 
 <body>
+  <div class="backgroundImage">
 
-  <div class="slider">
-    <div class="load">
-    </div>
-
-    <div class="content">
-
-      <div id="content-wrapper">
-
-        <!-- Jumbotron banner  -->
-        <div class="text-center titleBanner jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Holiday Wish List</h1>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="wishForms col-md-6 col-md-offset-3">
-              <h2 class="bold text-center">Login Form</h2>
-              <h4><p class = "bold text-center">Enter your email address and password to go to the Wish List Group</p></h4><br>
-              <form class="login">
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="bold">Email address</label>
-                  <input type="email" class="form-control" id="email-input" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1" class="bold">Password</label>
-                  <input type="password" class="form-control" id="password-input" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-default">Login</button>
-              </form>
-              <br />
-              <p class="bold">Or sign up <a href="signup.html">here</a></p>
-            </div>
-          </div>
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
+    <!-- Jumbotron banner  -->
+    <div class="text-center titleBanner formJumbotron jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Holiday Wish List</h1>
+        <h4 class="instruction bold">Enter your Email address and Password to go to your Wish List Group</h4>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="wishForms col-md-6 col-md-offset-3">
+          <h2 class="bold text-center">Login Form</h2>
+          <form class="login">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="bold">Email address</label>
+              <input type="email" class="form-control" id="email-input" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="bold">Password</label>
+              <input type="password" class="form-control" id="password-input" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+          </form>
+          <br />
+          <p class="bold">Or sign up <a href="signup.html">here</a></p>
+        </div>
+      </div>
 
-     <!-- Sticky Footer -->
-  <footer>
-    <p class="text-center"> Copyright &copy; 2020,  Holiday Wish List <i class="fas fa-gifts"></i></p>
-  </footer>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+
+
+    <!-- Sticky Footer -->
+    <footer>
+      <p class="text-center"> Copyright &copy; 2020, Holiday Wish List <i class="fas fa-gifts"></i></p>
+    </footer>
+
+  </div>
 </body>
 
 </html>
