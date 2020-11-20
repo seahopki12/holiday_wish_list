@@ -1,6 +1,12 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const sequelize = require("sequelize");
+
+// Requiring our custom middleware for checking if a user is logged in
+const isAuthenticated = require("../config/middleware/isAuthenticated");
+
+let currentUser;
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -8,16 +14,34 @@ module.exports = function(app) {
   // Otherwise the user will be sent an error
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
     // Sending back a password, even a hashed password, isn't a good idea
+    currentUser = req.user.id;
     res.json({
       email: req.user.email,
       id: req.user.id
     });
   });
 
-  // Creating a post route for list item
-  app.post("/api/items", (req, res) => {
-    db.Item.create(req.body).then(dbItem => {
-      res.json(dbItem);
+  // // Creating a post route for list item
+  // app.post("/api/items", (req, res) => {
+  //   db.Item.create(req.body).then(dbItem => {
+  //     res.json(dbItem);
+  //   });
+  // });
+
+  app.get("/members", isAuthenticated, (req, res) => {
+    db.User.findAll({
+      where: {
+        id: {
+          [sequelize.Op.not]: currentUser
+        }
+      },
+      raw: true
+    }).then(dbItem => {
+      const hbsObject = {
+        members: dbItem
+      };
+      console.log(hbsObject);
+      res.render("index", hbsObject);
     });
   });
 
