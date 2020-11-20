@@ -5,16 +5,55 @@ $(document).ready(() => {
     $(".member-name").text(data.email);
   });
 
-  const testListItem = {
-    name: "Pony",
-    UserId: 1
-  };
+  // $.get("/api/user").then(data => {
+  //   console.log(data);
+  //   for (let i = 0; i < data.length; i++ {
+  //     $()
+  //   });
+  // });
 
-  function submitListItem(item) {
-    $.post("/api/items", item).then(data => {
-      console.log(data);
-    });
-  }
+  // function getUsers() {
+  //   $.get("/api/user", data => {
+  //     // const rowsToAdd = [];
+  //     // for (let i = 0; i < data.length; i++) {
+  //     //   rowsToAdd.push(createUserRow(data[i]));
+  //     // }
+  //     // renderUserList(rowsToAdd);
+  //     // nameInput.val("");
+  //   });
+  // }
 
-  submitListItem(testListItem);
+  // function renderAuthorList(rows) {
+  //   authorList.children().not(":last").remove();
+  //   authorContainer.children(".alert").remove();
+  //   if (rows.length) {
+  //     console.log(rows);
+  //     authorList.prepend(rows);
+  //   }
+  //   else {
+  //     renderEmpty();
+  //   }
+  // }
+
+  // function createUserRow(userData) {
+  //   let newLi = $("<li>");
+  //   newLi.data("user", userData.id);
+  //   newLi.append("<a href='/blog?author_id=" + authorData.id + "'>Go to Posts</a></td>");
+  //   newTr.append("<td><a href='/cms?author_id=" + authorData.id + "'>Create a Post</a></td>");
+  //   newTr.append("<td><a style='cursor:pointer;color:red' class='delete-author'>Delete Author</a></td>");
+  //   return newTr;
+  // }
+
+  // const testListItem = {
+  //   name: "Pony",
+  //   UserId: 1
+  // };
+
+  // function submitListItem(item) {
+  //   $.post("/api/items", item).then(data => {
+  //     console.log(data);
+  //   });
+  // }
+
+  // submitListItem(testListItem);
 });
