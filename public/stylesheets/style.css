@@ -60,14 +60,6 @@ html {
     opacity: 0.8;
 }
 
-#leftSide {
-    background-color: lightgreen;
-}
-
-#rightSide {
-    background-color: lightgreen;
-}
-
 .load {
     animation: slide 2s;
 }

@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet for Font Awesome icon -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
     <link href="stylesheets/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
@@ -14,15 +15,16 @@
 
 <body>
 
-
-    <!-- JUMBOTRON BANNER  -->
-    <div class="text-center titleBanner jumbotron jumbotron-fluid">
-        <div class="container">
-            <a id="logout" class="btn btn-success btn-md" href="../public/login.html" role="button" style="float:right;">Logout</a>
-            <h1 class="display-4">Holiday Wish List</h1>
-        </div>
-    </div>
     <div class="bg">
+        <!-- JUMBOTRON BANNER  -->
+        <div class="text-center titleBanner jumbotron jumbotron-fluid">
+            <div class="container">
+                <a id="logout" class="btn btn-success btn-md" href="../public/login.html" role="button"
+                    style="float:right;">Logout</a>
+                <h1 class="display-4">Holiday Wish List</h1>
+            </div>
+        </div>
+
         <!-- WISH LIST CONTAINER -->
         <div class="container">
             <div class="row">
@@ -44,7 +46,8 @@
                     <!-- DATABASE -->
                     <div class="col-3">
                         <ul>
-                            {{#each userItem}} {{#unless bought}} {{> userItem/userItem-block bought=false}} {{/unless}} {{/each}}
+                            {{#each userItem}} {{#unless bought}} {{> userItem/userItem-block bought=false}} {{/unless}}
+                            {{/each}}
                         </ul>
                     </div>
                 </div>
@@ -68,20 +71,21 @@
                     <!-- DATABASE -->
                     <div class="col-3">
                         <ul>
-                            {{#each memberItem}} {{#unless bought}} {{> memberItem/memberItem-block bought=false}} {{/unless}} {{/each}}
+                            {{#each memberItem}} {{#unless bought}} {{> memberItem/memberItem-block bought=false}}
+                            {{/unless}} {{/each}}
                         </ul>
                     </div>
                     <div class="col-3">
 
                         <ul>
-                            {{#each memberItem}} {{#if bought}} {{> memberItem/memberItem-block devour=true}} {{/if}} {{/each}}
+                            {{#each memberItem}} {{#if bought}} {{> memberItem/memberItem-block devour=true}} {{/if}}
+                            {{/each}}
                         </ul>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
     </div>
 
 
@@ -93,6 +97,7 @@
     <footer>
         <p class="text-center"> Copyright &copy; 2020, Holiday Wish List <i class="fas fa-gifts"></i></p>
     </footer>
+    </div>
 
 </body>
 
