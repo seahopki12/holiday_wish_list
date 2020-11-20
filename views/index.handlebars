@@ -1,8 +1,7 @@
 <!-- JUMBOTRON BANNER  -->
 <div class="text-center titleBanner jumbotron jumbotron-fluid">
   <div class="container">
-    <a id="logout" class="btn btn-success btn-md" href="../public/login.html" role="button"
-      style="float:right;">Logout</a>
+    <a id="logout" class="btn btn-success btn-md" href="public/login.html" role="button" style="float:right;">Logout</a>
     <h1 class="display-4">Holiday Wish List</h1>
   </div>
 </div>
@@ -11,7 +10,7 @@
   <div class="container">
     <div class="row">
       <!-- USER SIDE -->
-      <div class="wishForms col-md-4">
+      <div class="wishForms col-sm-4">
         <h2 class="bold text-center">Your List</h2>
         <h3 class="bold text-left">Welcome User xxxx</h3>
         <div class="col-3">
@@ -34,7 +33,7 @@
       </div>
 
       <!-- FAMILY SIDE -->
-      <div class="wishForms col-md-7 col-md-offset-1 ">
+      <div class="wishForms col-sm-7 col-sm-offset-1 ">
         <h2 class="bold text-center">Family List</h2>
         <!-- FAMILY DROPDOWN LIST -->
         <div class="dropdown">
@@ -45,7 +44,7 @@
             {{#each members}}
             <li data-id="{{id}}">
               <a>
-              {{email}}
+                {{email}}
               </a>
             </li>
             {{/each}}
