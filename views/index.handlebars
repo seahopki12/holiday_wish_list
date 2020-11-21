@@ -13,32 +13,28 @@
       <div class="wishForms col-sm-4">
         <h2 class="bold text-center">Your List</h2>
         {{!-- <h3 class="bold text-left">Welcome User xxxx</h3> --}}
-        <ul>
-          {{#each items}}
-            <li>
-                {{name}}
-            </li>
-            {{/each}}
-        </ul>
+
         <div class="col-3">
           <h3>Add an Item</h3>
           <form class="create-form">
-            <div class="form-group">
-              <label for="bu">Item Name:</label>
+            <div class="form-group text-center">
               <input type="text" id="item" name="name" placeholder="Enter item here...">
-
-
               <button class="btn btn-success" type="submit">Wish for it!</button>
             </div>
           </form>
-        </div>
-        <!-- DATABASE -->
-        <div class="col-3">
-          <ul>
-            {{#each userItem}} {{#unless bought}} {{> userItem/userItem-block bought=false}} {{/unless}} {{/each}}
-          </ul>
+          <!-- DATABASE -->
+          <div class="col-3">
+            <ul>
+              {{#each items}}
+              <li>
+                {{name}}
+              </li>
+              {{/each}}
+            </ul>
+          </div>
         </div>
       </div>
+
 
       <!-- FAMILY SIDE -->
       <div class="wishForms col-sm-7 col-sm-offset-1 ">
