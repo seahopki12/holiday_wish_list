@@ -13,6 +13,18 @@ form.login {
     font-weight: bold;
 }
 
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 .wishForms {
     margin-top: 2.0rem;
     background-color: #ffe6e6;
@@ -54,16 +66,6 @@ html {
     padding-top: 0.1rem;
 }
 
-.formJumbotron {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-    padding-bottom: 0.50rem;
-    background-color: #ff4000;
-    opacity: 0.8;
-}
-
 .jumbotron {
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -71,15 +73,7 @@ html {
     padding-top: .0rem;
     padding-bottom: 0.50rem;
     background-color: #ff4000;
-    opacity: 0.8;
-}
-
-#leftSide {
-    background-color: lightgreen;
-}
-
-#rightSide {
-    background-color: lightgreen;
+    opacity: 0.9;
 }
 
 body {
@@ -98,7 +92,7 @@ footer {
     color: white;
     font-weight: bold;
     background-color: #ff4000;
-    opacity: 0.8;
+    opacity: 0.9;
     padding-top: 1rem;
     bottom: 0;
     width: 100%;
