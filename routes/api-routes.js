@@ -8,7 +8,7 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 let currentUser;
 
-module.exports = function (app) {
+module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -26,7 +26,7 @@ module.exports = function (app) {
     const item = {
       name: req.body.name,
       UserId: req.user.id
-    }
+    };
     db.Item.create(item).then(dbItem => {
       res.json(dbItem);
     });
