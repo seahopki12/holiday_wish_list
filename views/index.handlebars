@@ -11,17 +11,18 @@
     <div class="row">
       <!-- USER SIDE -->
       <div class="wishForms col-sm-4">
-        <h2 class="bold text-center">Your List</h2>
-        <h3 class="bold text-left">Welcome User xxxx</h3>
+        <h2 class="bold text-left">Welcome {{ user }}</h2>
+        <h3 class="bold text-center">Your List</h3>
         <div class="col-3">
           <h3>Add an Item</h3>
           <form class="create-form">
             <div class="form-group">
               <label for="bu">Item Name:</label>
-              <input type="text" id="bu" name="name">
-            </div>
+              <input type="text" id="item" name="name" placeholder="Enter item here...">
 
-            <button class="btn btn-success" type="submit">Wish for it!</button>
+
+              <button class="btn btn-success" type="submit">Wish for it!</button>
+            </div>
           </form>
         </div>
         <!-- DATABASE -->

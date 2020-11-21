@@ -21,12 +21,16 @@ module.exports = function(app) {
     });
   });
 
-  // // Creating a post route for list item
-  // app.post("/api/items", (req, res) => {
-  //   db.Item.create(req.body).then(dbItem => {
-  //     res.json(dbItem);
-  //   });
-  // });
+  // Creating a post route for list item
+  app.post("/api/items", (req, res) => {
+    const item = {
+      name: req.body.name,
+      UserId: req.user.id
+    };
+    db.Item.create(item).then(dbItem => {
+      res.json(dbItem);
+    });
+  });
 
   app.get("/members", isAuthenticated, (req, res) => {
     db.User.findAll({
