@@ -8,7 +8,7 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 let currentUser;
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -21,12 +21,16 @@ module.exports = function(app) {
     });
   });
 
-  // // Creating a post route for list item
-  // app.post("/api/items", (req, res) => {
-  //   db.Item.create(req.body).then(dbItem => {
-  //     res.json(dbItem);
-  //   });
-  // });
+  // Creating a post route for list item
+  app.post("/api/items", (req, res) => {
+    const item = {
+      name: req.body.name,
+      UserId: req.user.id
+    }
+    db.Item.create(item).then(dbItem => {
+      res.json(dbItem);
+    });
+  });
 
   app.get("/members", isAuthenticated, (req, res) => {
     db.User.findAll({
