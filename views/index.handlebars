@@ -12,7 +12,14 @@
       <!-- USER SIDE -->
       <div class="wishForms col-sm-4">
         <h2 class="bold text-center">Your List</h2>
-        <h3 class="bold text-left">Welcome User xxxx</h3>
+        {{!-- <h3 class="bold text-left">Welcome User xxxx</h3> --}}
+        <ul>
+          {{#each items}}
+            <li>
+                {{name}}
+            </li>
+            {{/each}}
+        </ul>
         <div class="col-3">
           <h3>Add an Item</h3>
           <form class="create-form">

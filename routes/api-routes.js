@@ -6,42 +6,39 @@ const sequelize = require("sequelize");
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
-let currentUser;
-
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
   app.post("/api/login", passport.authenticate("local"), (req, res) => {
     // Sending back a password, even a hashed password, isn't a good idea
-    currentUser = req.user.id;
     res.json({
       email: req.user.email,
       id: req.user.id
     });
   });
 
-  // // Creating a post route for list item
-  // app.post("/api/items", (req, res) => {
-  //   db.Item.create(req.body).then(dbItem => {
-  //     res.json(dbItem);
-  //   });
-  // });
-
   app.get("/members", isAuthenticated, (req, res) => {
     db.User.findAll({
       where: {
         id: {
-          [sequelize.Op.not]: currentUser
+          [sequelize.Op.not]: req.user.id
         }
       },
       raw: true
-    }).then(dbItem => {
-      const hbsObject = {
-        members: dbItem
-      };
-      console.log(hbsObject);
-      res.render("index", hbsObject);
+    }).then(members => {
+      db.Item.findAll({
+        where: {
+          UserId: req.user.id
+        },
+        raw: true
+      }).then(items => {
+        // console.log(hbsObjectTwo);
+        res.render("index", {
+          members,
+          items
+        });
+      });
     });
   });
 
