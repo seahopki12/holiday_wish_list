@@ -43,13 +43,24 @@ module.exports = function(app) {
           UserId: req.user.id
         },
         raw: true
-      }).then(items => {
-        // console.log(hbsObjectTwo);
+      }).then(userItems => {
         res.render("index", {
           members,
-          items
+          userItems
         });
       });
+    });
+  });
+
+  app.get("/api/items/:id", (req, res) => {
+    db.Item.findAll({
+      where: {
+        UserId: req.params.id
+      },
+      raw: true
+    }).then(familyItems => {
+      console.log(familyItems);
+      res.json(familyItems);
     });
   });
 
