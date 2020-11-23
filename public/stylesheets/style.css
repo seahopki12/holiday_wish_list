@@ -9,6 +9,12 @@ form.login {
     margin-top: 1.0rem;
 }
 
+#validPass {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .bold {
     font-weight: bold;
 }
