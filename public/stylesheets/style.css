@@ -13,6 +13,19 @@ form.login {
     font-weight: bold;
 }
 
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  
 .wishForms {
     margin-top: 2.0rem;
     background-color: #ffe6e6;
