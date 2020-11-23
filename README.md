@@ -52,5 +52,5 @@
   
 ## Questions  
 >Please direct all questions to:  
->TheMattyD@outlook.com<br/>  
->Check out my GitHub Profile @ https://github.com/TheyCallMeMattyD  
+>SEAN'S EMAIL ADDRESS HERE<br/>  
+>Check out my GitHub Profile @ https://github.com/seahopki12
