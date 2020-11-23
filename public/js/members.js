@@ -25,4 +25,16 @@ $(document).ready(() => {
       location.reload();
     });
   });
+
+  // Click event to retrieve family member wish list.
+  $(".family-member").click(function(event) {
+    event.preventDefault();
+    $("#familyWishList").empty();
+    const memberId = $(this).data("id");
+    $.get("api/items/" + memberId).then(data => {
+      for (let i = 0; i < data.length; i++) {
+        $("#familyWishList").append(`<li>${data[i].name}</li>`);
+      }
+    });
+  });
 });
