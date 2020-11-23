@@ -20,14 +20,14 @@ form.login {
 }
 
 
-.row {
+.rowIndex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
     flex-wrap: wrap;
   }
-  .row > [class*='col-'] {
+  .rowIndex > [class*='col-'] {
     display: flex;
     flex-direction: column;
   }
