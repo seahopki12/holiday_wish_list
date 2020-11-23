@@ -14,13 +14,6 @@
         <h2 class="bold text-center">Your List</h2>
         {{!-- <h3 class="bold text-left">Welcome User xxxx</h3> --}}
         <ul>
-          {{#each userItems}}
-          <li>
-            {{name}}
-          </li>
-          {{/each}}
-        </ul>
-
         <div class="col-3">
           <h3>Add an Item</h3>
           <form class="create-form">
@@ -32,7 +25,7 @@
           <!-- DATABASE -->
           <div class="col-3 list-group list-group-flush">
             <ul>
-              {{#each items}}
+              {{#each userItems}}
               <li class="list-group-item">
                 {{name}}
               </li>
