@@ -13,6 +13,19 @@ form.login {
     font-weight: bold;
 }
 
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  
 .wishForms {
     margin-top: 2.0rem;
     background-color: #ffe6e6;
@@ -91,16 +104,29 @@ body {
 }
 
 
-/* Style footer */
-
-footer {
+/* Style footer for forms */
+.formFooter {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-weight: bold;
     background-color: #ff4000;
-    opacity: 0.8;
+    opacity: 0.9;
     padding-top: 1rem;
     bottom: 0;
     width: 100%;
     position: fixed;
 }
+
+/* Style footer for main */
+.mainFooter {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    background-color: #ff4000;
+    opacity: 0.9;
+    padding-top: 1rem;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
