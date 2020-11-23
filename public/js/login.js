@@ -13,6 +13,7 @@ $(document).ready(() => {
     };
 
     if (!userData.email || !userData.password) {
+      $("#validPass").html("Password Does Not Match Email address");
       return;
     }
 
