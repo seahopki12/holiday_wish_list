@@ -8,8 +8,6 @@
 >Holiday shopping lists made easy!... This webpage allows the user and friends/family to add their personal holiday wish-list. Users can then look at the lists of the OTHER members and sign up to buy their wished-for items. The current user is NOT able to see who has bought gifts on their own list.  
 
 >HEROKU WEBSITE ADDRESS HERE  
-
->
   
 ## Table of Contents
 >1. [Title](#Title)
@@ -23,9 +21,9 @@
 >9. [Questions?](#Questions?)
   
 ## Installation
->Placeholder  
->  
->Placeholder  
+>PLACEHOLDER  
+>PLACEHOLDER  
+>PLACEHOLDER    
   
 ## Usage
 >PLACEHOLDER  
@@ -49,8 +47,7 @@
 ## Tests
 >Not applicable for this application. If it deployed to the Heroku hosting website, then it works!  
 
-  
 ## Questions  
 >Please direct all questions to:  
 >SEAN'S EMAIL ADDRESS HERE<br/>  
->Check out my GitHub Profile @ https://github.com/seahopki12
+>Check out my GitHub Profile @ https://github.com/seahopki12  
