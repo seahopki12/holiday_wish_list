@@ -1,8 +1,8 @@
 # Project Two: Holiday Wish List :gift:
 
-[![GitHub issues](https://img.shields.io/github/issues/seanhopki12/project_two?style=for-the-badge)](https://github.com/seanhopki12/project_two/issues) &nbsp;
-[![GitHub stars](https://img.shields.io/github/stars/seanhopki12/project_two?style=for-the-badge)](https://github.com/seanhopki12/project_two/stargazers) &nbsp;
-![GitHub last commit](https://img.shields.io/github/last-commit/seanhopki12/project_two?style=for-the-badge)  
+[![GitHub issues](https://img.shields.io/github/issues/seahopki12/project_two?style=for-the-badge)](https://github.com/seahopki12/project_two/issues) &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/seahopki12/project_two?style=for-the-badge)](https://github.com/seahopki12/project_two/stargazers) &nbsp;
+![GitHub last commit](https://img.shields.io/github/last-commit/seahopki12/project_two?style=for-the-badge)  
   
 ## Description
 >Holiday shopping lists made easy!... This webpage allows the user and friends/family to add their personal holiday wish-list. Users can then look at the lists of the OTHER members and sign up to buy their wished-for items. The current user is NOT able to see who has bought gifts on their own list.  
@@ -50,4 +50,4 @@
 ## Questions  
 >Please direct all questions to:  
 >SEAN'S EMAIL ADDRESS HERE<br/>  
->Check out my GitHub Profile @ https://github.com/seahopki12  
+>Check out my GitHub Profile @ https://github.com/seahopki12 
