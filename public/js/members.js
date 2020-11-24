@@ -60,6 +60,4 @@ $(document).ready(() => {
       });
     });
   });
-
-  // Write click event for update here
 });
