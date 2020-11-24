@@ -136,3 +136,11 @@ body {
     position: fixed;
 }
 
+.bought {
+    text-decoration: line-through;
+}
+
+.familyListItem {
+    cursor: pointer;
+}
+
