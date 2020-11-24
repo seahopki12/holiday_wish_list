@@ -100,6 +100,11 @@ html {
     height: 100%;
     margin: 0;
 }
+
+#delete {
+    margin-top: -6px;
+}
+
 /* style background image used on forms pages */
 .formImage {
     background-image: url("../images/holidays1.png");
@@ -112,18 +117,11 @@ html {
 .mainImage {
     /* The image used */
     background-image: url("../images/christmas2.png");
-    /* Full height */
-    /* height: 100%;
-    margin: -3rem; */
     /* Center and scale the image nicely */
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-.navbar {
-    padding-top: 0.5rem;
 }
 /* style logout button */
 #logout {
@@ -168,18 +166,7 @@ html {
     width: 100%;
     position: fixed;
 }
-/* Style footer for main */
-/* .mainFooter {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    font-weight: bold;
-    background-color: #ff4000;
-    opacity: 0.9;
-    padding-top: 1rem;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-} */
+
 /* style for 'bought' in Wish List */
 .bought {
     text-decoration: line-through;
