@@ -9,81 +9,75 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <!-- CSS Stylesheet -->
   <link href="stylesheets/style.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/gift.png">
 </head>
 
 <body>
-  <div class="slider">
-    <div class="load">
-    </div>
-    <!-- Jumbotron banner  -->
-    <div class="text-center titleBanner formJumbotron jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Holiday Wish List</h1>
-        <h4 class="instruction bold">Sign up to create your Wish List and view the Wish Lists of others in your
-          Group</h4>
-      </div>
-    </div>
-    <!-- Bootstrap Grid: Row 1, Column 1 -->
+  <!-- Jumbotron banner  -->
+  <div class="text-center titleBanner formJumbotron jumbotron jumbotron-fluid">
     <div class="container">
-      <div class="row">
-        <div class="wishForms col-md-6 col-md-offset-3">
-          <h2 class="bold formTitle text-center">Sign Up Form</h2>
-          <form class="signup">
-            <div class="form-group">
-              <label for="exampleInputEmail1" class="bold">Email address</label>
-              <input type="email" class="form-control" id="email-input" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1" class="bold">Password</label>
-              <input type="password" class="form-control" id="password-input" placeholder="Password">
-            </div>
-            <!-- Notify user if email address is already being used -->
-            <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-              <span aria-hidden="true"></span>
-              <span class="sr-only">Error:</span>
-              <p id=validPass>Email Address Already Being Used</p>
-            </div>
-            <button type="submit" class="btn btn-default">Sign Up</button>
-          </form>
-          <br />
-          <p class="bold">Or log in <a href="login.html">here</a></p>
-        </div>
-
-        <div class="col-md-6 col-md-offset-3">
-          <h1 class="holidayList">Happy Holidays</h1>
-        </div>
-
-        <div class="listLine1 col-md-6 col-md-offset-3">
-          <p>Christmas Bodhi Kwanzaa</p>
-        </div>
-
-        <div class="listLine2 col-md-6 col-md-offset-3">
-          <p>Hanukkah Boxing<span class ="dash">-</span>Day Bodhi</p>
-        </div>
-
-        <div class="listLine3 col-md-6 col-md-offset-3">
-          <p>Las<span class ="dash">-</span>Posadas Yule Eid<span class ="dash">-</span>al-Fitr</p>
-        </div>
-
-        <div class="listLine4 col-md-6 col-md-offset-3">
-          <p>Diwali Homanay New<span class ="dash">-</span>Year</p>
-        </div>
-
+      <h1 class="display-4">Holiday Wish List</h1>
+      <h4 class="instruction bold">Sign up to create your Wish List and view the Wish Lists of others in your
+        Group</h4>
+    </div>
+  </div>
+  <!-- Bootstrap Grid: Row 1, Column 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="wishForms col-md-6 col-md-offset-3">
+        <h2 class="bold formTitle text-center">Sign Up Form</h2>
+        <form class="signup">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="bold">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="bold">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <!-- Notify user if email address is already being used -->
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            <p id=validPass>Email Address Already Being Used</p>
+          </div>
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
+        <br />
+        <p class="bold">Or log in <a href="login.html">here</a></p>
+      </div>
+      <!-- International Holiday List Column -->
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="holidayList">Happy Holidays</h1>
       </div>
 
+      <div class="listLine1 col-md-6 col-md-offset-3">
+        <p>Christmas Bodhi Kwanzaa</p>
+      </div>
+
+      <div class="listLine2 col-md-6 col-md-offset-3">
+        <p>Hanukkah Boxing<span class="dash">-</span>Day Bodhi</p>
+      </div>
+
+      <div class="listLine3 col-md-6 col-md-offset-3">
+        <p>Las<span class="dash">-</span>Posadas Yule Eid<span class="dash">-</span>al-Fitr</p>
+      </div>
+
+      <div class="listLine4 col-md-6 col-md-offset-3">
+        <p>Diwali Hogmanay New<span class="dash">-</span>Year</p>
       </div>
     </div>
-
-    <!-- Sticky Footer -->
-    <footer class="formFooter">
-      <p class="text-center"> Copyright &copy; 2020, Holiday Wish List <i class="fas fa-gifts"></i></p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/signup.js"></script>
-
+  </div>
+  <!-- Footer -->
+  <footer class="formFooter">
+    <p class="text-center">&copy; 2020, Holiday Wish List <i class="fas fa-gifts"></i></p>
+  </footer>
+  <!-- jquery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- javascript file -->
+  <script src="js/signup.js"></script>
 
 </body>
 
