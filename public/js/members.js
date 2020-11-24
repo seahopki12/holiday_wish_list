@@ -32,6 +32,10 @@ $(document).ready(() => {
     event.preventDefault();
     $("#familyWishList").empty();
     const memberId = $(this).data("id");
+    const memberEmail = $(this)
+      .text()
+      .trim();
+    $("#familyMemberName").text(memberEmail);
     $.get("api/items/" + memberId).then(data => {
       for (let i = 0; i < data.length; i++) {
         $("#familyWishList").append(
@@ -56,6 +60,4 @@ $(document).ready(() => {
       });
     });
   });
-
-  // Write click event for update here
 });
