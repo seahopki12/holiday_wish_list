@@ -100,23 +100,11 @@ html {
     height: 100%;
     margin: 0;
 }
-/* Style for background image previously used on main page */
-.bg {
-    /* The image used */
-    background-image: url("/public/images/christmas2.png");
-    /* Full height */
-    height: 100%;
-    margin: -3rem;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.navbar {
+/* .navbar {
     padding-top: 0.5rem;
-}
-/* style logout buton */
+} */
+/* style logout button */
 #logout {
     margin-top: 3.0rem;
     margin-bottom: 5px;
@@ -147,7 +135,7 @@ html {
     background-color: #ff4000;
     opacity: 0.8;
 }
-/* stle background image */
+/* style background image */
 body {
     background-image: url("../images/holidays1.png");
     background-position: center center;
