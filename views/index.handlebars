@@ -57,13 +57,15 @@
         <h3 class="text-left">SELECTED Member Name</h3>
         <!-- DATABASE -->
         <div class="col-3">
-          <ul id="familyWishList"></ul>
+          <div class="col-3 list-group list-group-flush">
+          <ul class="list-group-item" id="familyWishList"></ul>
+          </div>
         </div>
-        <div class="col-3">
-           <ul>
+        {{!-- <div class="col-3"> --}}
+           {{!-- <ul>
             {{#each memberItem}} {{#if bought}} {{> memberItem/memberItem-block devour=true}} {{/if}} {{/each}}
-          </ul>
-        </div>
+          </ul> --}}
+        {{!-- </div> --}}
       </div>
     </div>
   </div>

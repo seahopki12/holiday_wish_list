@@ -34,7 +34,7 @@ $(document).ready(() => {
     $.get("api/items/" + memberId).then(data => {
       for (let i = 0; i < data.length; i++) {
         $("#familyWishList").append(
-          `<li><a class="familyListItem" data-id=${data[i].id}>${data[i].name}</a></li>`
+          `<li class="list-group-item"><a class="familyListItem" data-id=${data[i].id}>${data[i].name}</a></li>`
         );
       }
     });
