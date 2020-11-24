@@ -100,4 +100,20 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.put("/api/items/:id", (req, res) => {
+    // update code
+    db.Item.update(
+      {
+        bought: req.body.bought
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    ).then(() => {
+      res.end();
+    });
+  });
 };
