@@ -1,11 +1,4 @@
-<!-- JUMBOTRON BANNER  -->
-<div class="text-center titleBanner jumbotron jumbotron-fluid">
-  <div class="container">
-    <a id="logout" class="btn btn-success btn-md" href="/login.html" role="button" style="float:right;">Logout</a>
-    <h1 class="display-4">Holiday Wish List</h1>
-  </div>
-</div>
-<div class="bg">
+
   <!-- WISH LIST CONTAINER -->
   <div class="container">
     <div class="rowIndex">
@@ -28,15 +21,13 @@
               {{#each userItems}}
               <li class="list-group-item">
                 {{name}}
-                <button class="btn btn-delete" type="delete" style="float:right" data-id="{{id}}">Delete Item</button>
+                <button class="btn btn-delete" type="delete" data-id="{{id}}">Delete Item</button>
               </li>
               {{/each}}
             </ul>
           </div>
         </div>
       </div>
-
-
       <!-- FAMILY SIDE -->
       <div class="wishForms col-sm-7 col-sm-offset-1 ">
         <h2 class="bold text-center">Family and Friends List</h2>
@@ -64,5 +55,3 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
