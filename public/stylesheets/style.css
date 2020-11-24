@@ -55,7 +55,6 @@ form.login {
     line-height: 1.0rem;
     color: #ff4000;
     word-spacing: 1.2em;
-    /* display: inline-block; */
     text-align: center;
 }
 /* style for line 21 of celebrated holidays  */
@@ -67,7 +66,6 @@ form.login {
     line-height: 1.0rem;
     color: #ff4000;
     word-spacing: 0.5em;
-    /* display: inline-block; */
     text-align: center;
 }
 /* style for line 3 of celebrated holidays  */
@@ -79,7 +77,6 @@ form.login {
     line-height: 1.0rem;
     color: #ff4000;
     word-spacing: 0.6em;
-    /* display: inline-block; */
     text-align: center;
 }
 /* style for line 4 of celebrated holidays  */
@@ -90,8 +87,7 @@ form.login {
     font-weight: bold;
     line-height: 1.0rem;
     color: #ff4000;
-    word-spacing: 1.1em;
-    /* display: inline-block; */
+    word-spacing: 0.75em;
     text-align: center;
 }
 /* style for character space needed in holidays  */
@@ -104,7 +100,7 @@ html {
     height: 100%;
     margin: 0;
 }
-
+/* Style for background image previously used on main page */
 .bg {
     /* The image used */
     background-image: url("/public/images/christmas2.png");
@@ -159,8 +155,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
-
 /* Style footer for forms */
 .formFooter {
     font-family: 'Times New Roman', Times, serif;
@@ -173,7 +167,6 @@ body {
     width: 100%;
     position: fixed;
 }
-
 /* Style footer for main */
 /* .mainFooter {
     font-family: 'Times New Roman', Times, serif;
