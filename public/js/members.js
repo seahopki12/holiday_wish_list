@@ -33,8 +33,12 @@ $(document).ready(() => {
     const memberId = $(this).data("id");
     $.get("api/items/" + memberId).then(data => {
       for (let i = 0; i < data.length; i++) {
-        $("#familyWishList").append(`<li>${data[i].name}</li>`);
+        $("#familyWishList").append(
+          `<li><a class="familyListItem" data-id=${data[i].id}>${data[i].name}</a></li>`
+        );
       }
     });
   });
+
+  // Write click event for update here
 });
