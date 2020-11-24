@@ -21,6 +21,7 @@ $(document).ready(() => {
       data: newItem
     }).then(() => {
       console.log("added new item");
+      $("#item").val("");
       // Reload the page to get the updated list
       location.reload();
     });
