@@ -59,7 +59,6 @@ module.exports = function(app) {
       },
       raw: true
     }).then(familyItems => {
-      console.log(familyItems);
       res.json(familyItems);
     });
   });
@@ -99,5 +98,22 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+
+  app.put("/api/items/:id", (req, res) => {
+    console.log(req.body);
+    // update code
+    db.Item.update(
+      {
+        bought: req.body.bought
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    ).then(() => {
+      res.end();
+    });
   });
 };

@@ -33,8 +33,28 @@ $(document).ready(() => {
     const memberId = $(this).data("id");
     $.get("api/items/" + memberId).then(data => {
       for (let i = 0; i < data.length; i++) {
-        $("#familyWishList").append(`<li>${data[i].name}</li>`);
+        $("#familyWishList").append(
+          `<li class="list-group-item"><a class="familyListItem ${data[i]
+            .bought && "bought"}" data-id=${data[i].id}>${
+            data[i].name
+          }</a></li>`
+        );
       }
+      $(".familyListItem").click(function(event) {
+        event.preventDefault();
+        const listItemId = $(this).data("id");
+        console.log(listItemId);
+        $.ajax({
+          url: "/api/items/" + listItemId,
+          data: { bought: true },
+          method: "PUT"
+        }).then(() => {
+          // location.reload();
+          $(this).addClass("bought");
+        });
+      });
     });
   });
+
+  // Write click event for update here
 });
