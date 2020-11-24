@@ -17,7 +17,6 @@
   <div class="slider">
     <div class="load">
     </div>
-
     <!-- Jumbotron banner  -->
     <div class="text-center titleBanner formJumbotron jumbotron jumbotron-fluid">
       <div class="container">
@@ -26,6 +25,7 @@
           Group</h4>
       </div>
     </div>
+    <!-- Bootstrap Grid: Row 1, Column 1 -->
     <div class="container">
       <div class="row">
         <div class="wishForms col-md-6 col-md-offset-3">
@@ -39,20 +39,45 @@
               <label for="exampleInputPassword1" class="bold">Password</label>
               <input type="password" class="form-control" id="password-input" placeholder="Password">
             </div>
+            <!-- Notify user if email address is already being used -->
             <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">Error:</span> <span class="msg"></span>
+              <span aria-hidden="true"></span>
+              <span class="sr-only">Error:</span>
+              <p id=validPass>Email Address Already Being Used</p>
             </div>
             <button type="submit" class="btn btn-default">Sign Up</button>
           </form>
           <br />
           <p class="bold">Or log in <a href="login.html">here</a></p>
         </div>
+
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="holidayList">Happy Holidays</h1>
+        </div>
+
+        <div class="listLine1 col-md-6 col-md-offset-3">
+          <p>Christmas Bodhi Kwanzaa</p>
+        </div>
+
+        <div class="listLine2 col-md-6 col-md-offset-3">
+          <p>Hanukkah Boxing<span class ="dash">-</span>Day Bodhi</p>
+        </div>
+
+        <div class="listLine3 col-md-6 col-md-offset-3">
+          <p>Las<span class ="dash">-</span>Posadas Yule Eid<span class ="dash">-</span>al-Fitr</p>
+        </div>
+
+        <div class="listLine4 col-md-6 col-md-offset-3">
+          <p>Diwali Homanay New<span class ="dash">-</span>Year</p>
+        </div>
+
+      </div>
+
       </div>
     </div>
 
     <!-- Sticky Footer -->
-    <footer class = "formFooter">
+    <footer class="formFooter">
       <p class="text-center"> Copyright &copy; 2020, Holiday Wish List <i class="fas fa-gifts"></i></p>
     </footer>
 
