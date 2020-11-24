@@ -46,7 +46,8 @@ module.exports = function(app) {
       }).then(userItems => {
         res.render("index", {
           members,
-          userItems
+          userItems,
+          email: req.user.email
         });
       });
     });
