@@ -3,6 +3,10 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.TEXT,
       allowNull: false
+    },
+    bought: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     }
   });
   Item.associate = function(models) {
