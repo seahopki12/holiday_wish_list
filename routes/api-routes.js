@@ -28,7 +28,8 @@ module.exports = function(app) {
       res.json(dbItem);
     });
   });
-
+  // Route to find all users that are not the one currently logged in, then find all the items posted by the current user.
+  // then render the res to the handlesbars page
   app.get("/members", isAuthenticated, (req, res) => {
     db.User.findAll({
       where: {
@@ -52,7 +53,7 @@ module.exports = function(app) {
       });
     });
   });
-
+  // route to find all items posted by the family member the client chose, then shows a list of that to the client.
   app.get("/api/items/:id", (req, res) => {
     db.Item.findAll({
       where: {
@@ -100,7 +101,7 @@ module.exports = function(app) {
       });
     }
   });
-
+  // route to update the bought column from false to true when the client clicks on the item they want to buy
   app.put("/api/items/:id", (req, res) => {
     console.log(req.body);
     // update code
