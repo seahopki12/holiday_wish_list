@@ -1,10 +1,10 @@
 $(document).ready(() => {
-  // This file just does a GET request to figure out which user is logged in
-  // and updates the HTML on the page
+  // gets current user email and appends to HTML
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
   });
 
+  // On event to add new user wish item to database
   $(".create-form").on("submit", event => {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
@@ -45,6 +45,7 @@ $(document).ready(() => {
           }</a></li>`
         );
       }
+      // Click event to update family member wish item to 'bought'
       $(".familyListItem").click(function(event) {
         event.preventDefault();
         const listItemId = $(this).data("id");
