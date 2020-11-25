@@ -117,4 +117,14 @@ module.exports = function(app) {
       res.end();
     });
   });
+
+  app.delete("/api/items/delete/:id", (req, res) => {
+    db.Item.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(() => {
+      res.end();
+    });
+  });
 };

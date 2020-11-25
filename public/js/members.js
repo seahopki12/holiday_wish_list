@@ -60,4 +60,18 @@ $(document).ready(() => {
       });
     });
   });
+
+  // On click event for delete button
+  $(".delete").on("click", function(event) {
+    event.preventDefault();
+    const deleteId = $(this).data("id");
+    console.log($(this).data());
+    $.ajax({
+      method: "DELETE",
+      url: "/api/items/delete/" + deleteId
+    }).then(() => {
+      console.log("Deleted user item.");
+      location.reload();
+    });
+  });
 });

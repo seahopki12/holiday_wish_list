@@ -49,5 +49,6 @@
 
 ## Questions  
 >Please direct all questions to:  
->SEAN'S EMAIL ADDRESS HERE<br/>  
+>  
+>seahopki12@gmail.com  
 >Check out my GitHub Profile @ https://github.com/seahopki12 
