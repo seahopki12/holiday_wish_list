@@ -74,6 +74,7 @@ git push heroku main
 > Express 
 > Handlebars  
 > ORM  
+> ImageMagick (npm package deployed locally for background image editing)   
 > Heroku hosting  
   
 ## License
