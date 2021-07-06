@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/seahopki12/project_two?style=for-the-badge)](https://github.com/seahopki12/project_two/stargazers) &nbsp;
 ![GitHub last commit](https://img.shields.io/github/last-commit/seahopki12/project_two?style=for-the-badge)  
 
-![](public/images/wish_list.gif)
+![](public/images/wish_list_2.gif)
   
 ## Description
 >Holiday shopping lists made easy!... This webpage allows the user and friends/family to add their personal holiday wish-list. Users can then look at the lists of the OTHER members and sign up to buy their wished-for items. The current user is NOT able to see who has bought gifts on their own list.  
