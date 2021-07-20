@@ -1,12 +1,11 @@
-
-  <!-- WISH LIST CONTAINER -->
-  <div class="container">
-    <div class="rowIndex">
-      <!-- USER SIDE -->
-      <div class="wishForms col-sm-4">
-        <h2 class="bold text-center">Your List</h2>
-        <h3 class="bold text-left">Welcome User {{email}}</h3>
-        <ul>
+<!-- WISH LIST CONTAINER -->
+<div class="container">
+  <div class="rowIndex">
+    <!-- USER SIDE -->
+    <div class="wishForms col-sm-4 text-center">
+      <h2 class="text-center">Your List</h2>
+      <h3>Welcome User {{email}}</h3>
+      <ul>
         <div class="col-3">
           <h3>Add an Item</h3>
           <form class="create-form">
@@ -21,38 +20,39 @@
               {{#each userItems}}
               <li class="list-group-item">
                 {{name}}
-                <button class="btn-sm btn-danger delete" type="delete" style="float:right" data-id="{{id}}">Delete Item</button>
+                <button class="btn-sm btn-danger delete" type="delete" style="float:right" data-id="{{id}}">Delete
+                  Item</button>
               </li>
               {{/each}}
             </ul>
           </div>
         </div>
+    </div>
+    <!-- FAMILY SIDE -->
+    <div class="wishForms col-sm-7 col-sm-offset-1 text-center">
+      <h2 class="text-center">Family and Friends List</h2>
+      <!-- FAMILY DROPDOWN LIST -->
+      <div class="btn-group" role="group" aria-label="dropdown with button group">
+        <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+          Family / Friend
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          {{#each members}}
+          <li class="family-li">
+            <button class="family-member dropdown-item" data-id="{{id}}">
+              {{email}}
+            </button>
+          </li>
+          {{/each}}
+        </ul>
       </div>
-      <!-- FAMILY SIDE -->
-      <div class="wishForms col-sm-7 col-sm-offset-1 ">
-        <h2 class="bold text-center">Family and Friends List</h2>
-        <!-- FAMILY DROPDOWN LIST -->
-        <div class="dropdown">
-          <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Family /
-            Friend
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            {{#each members}}
-            <li class="family-li">
-              <button class="family-member" data-id="{{id}}">
-                {{email}}
-              </button>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-        <h3 id="familyMemberName" class="text-left bold"></h3>
-        <!-- DATABASE -->
-        <div class="col-3">
-          <div class="col-3 list-group list-group-flush">
+      <h3 id="familyMemberName" class="text-center"></h3>
+      <!-- DATABASE -->
+      <div class="col-3">
+        <div class="col-3 list-group list-group-flush">
           <ul id="familyWishList"></ul>
-          </div>
         </div>
       </div>
     </div>
-    
+  </div>

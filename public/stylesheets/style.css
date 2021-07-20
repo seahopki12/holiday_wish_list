@@ -194,3 +194,7 @@ body, html {
 .familyListItem {
     cursor: pointer;
 }
+
+.btn-group {
+    align-self: center;
+}
